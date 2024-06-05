@@ -7,9 +7,9 @@ export default function Navbar() {
       <header className="shadow-md font-[sans-serif] tracking-wide relative z-50">
         <section className="md:flex lg:items-center  relative py-3 lg:px-10 px-4 border-gray-200 border-b bg-white lg:min-h-[80px] max-lg:min-h-[60px]">
           
-          <a to='/' className="w-20">
+          <Link to='/' className="w-20">
                 E-cart
-          </a>
+          </Link>
           
           <div className="flex flex-wrap w-full items-center justify-between">
             <input
@@ -21,6 +21,7 @@ export default function Navbar() {
               <ul className="flex items-center">
                 
                 
+                <Link to='./cart'>
                 <li className="max-lg:py-2 px-3 cursor-pointer">
                   <span className="relative">
                     <svg
@@ -40,6 +41,7 @@ export default function Navbar() {
                     </span>
                   </span>
                 </li>
+                </Link>
                 <li className="flex text-[15px] max-lg:py-2 px-3 hover:text-[#007bff] hover:fill-[#007bff]">
                   <button className="px-4 py-2 text-sm rounded font-semibold text-[#333] border-2 border-[#333] bg-transparent">
                     Sign In
