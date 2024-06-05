@@ -7,14 +7,14 @@ export const items =  [
           amazonLink: 'https://amzn.to/3PuckZp',
           description: 'Apple iPhone 14 (128 GB) - Blue',
           price: '89999',
-        },
+        }, 
         {
           id: 5,
           category: 'laptops',
           title: "Xiaomi [Smartchoice] Notebookpro",
           imgSrc: 'https://m.media-amazon.com/images/I/71TPda7cwUL._SL1500_.jpg',
           amazonLink: 'https://amzn.to/3EzeQaC',
-          description: 'Xiaomi [Smartchoice] Notebookpro ',
+          description: 'Xiaomi [Smartchoice] Notebookpro I am the most selling thing in this stuff',
           price: '49999',
         },
         {

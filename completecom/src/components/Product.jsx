@@ -10,17 +10,17 @@ export default function Product() {
             return (
               <>
                 <div className="col-lg-4 my-3 text-center">
-                  <div className="card" style={{ width: "18rem" }}>
-                    <div class="card" style="width: 18rem;">
-                      <img src="..." class="card-img-top" alt="..." />
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">
-                          Some quick example text to build on the card title and
-                          make up the bulk of the card's content.
-                        </p>
-                        <a href="#" class="btn btn-primary">
-                          Go somewhere
+                  <div className="card" style={{ width: "18rem"}} >
+                    <div className="card" style={{width: "18rem"}}>
+                      <img src={product.imgSrc} className="card-img-top" alt="..." />
+                      <div className="card-body">
+                        <h5 className="card-title">{product.title}</h5>
+                        <p className="card-text">{product.description}</p>
+                        <a className="btn btn-primary mx-2">
+                          {'Rs.'} {product.price}
+                        </a>
+                        <a className="btn btn-primary">
+                          Add To Cart
                         </a>
                       </div>
                     </div>
