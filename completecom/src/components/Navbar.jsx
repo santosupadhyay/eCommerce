@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import {Link} from 'react-router-dom'
+import { items } from "./Data";
 
 export default function Navbar() {
+
+  const [product, setProduct] = useState({});
+
+   function showMobiles (product){
+    totalMobiles = items.filter((p)=>p.category === product.category);
+    setProduct(totalMobiles)
+  }
   return (
     <>
       <header className="shadow-md font-[sans-serif] tracking-wide relative z-50">
@@ -122,6 +130,7 @@ export default function Navbar() {
               <a
                 href=""
                 className="hover:text-yellow-300 text-white text-[15px] font-medium block"
+                onClick={showMobiles}
               >
                 Mobiles
               </a>
